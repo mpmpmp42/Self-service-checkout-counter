@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<mete name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>毛玻璃效果展示</title>
+	<link rel="stylesheet" type="text/css" href="/static/毛玻璃效果.css"/>
+	<style></style>
+</head>
+<body>
+
+
+	<div id="big-box">
+		<h1>big pag</h1>
+		<br><br><br>
+
+        {% for key in fanhui %}
+		<div class ="first-box">
+			<div class="first-box1">
+				<h4>{{key.name}}</h4>
+				<h5>{{key.price}}</h4>
+			</div>
+
+
+			<div class="first-box2">
+				<h1>{{key.number}}</h1>
+			</div>
+			
+		</div>
+		<br><br><br>
+		{% endfor %}
+		
+		
+		
+	</div>
+	
+	
+	
+	
+		
+
+
+<!--滑入动画展示-->
+<header>
+	<a href="#nav" class="nav-open">
+		&#9776;
+	</a>
+</header>
+<!--滑入动画展示-->
+	
+</body>
+</html>
