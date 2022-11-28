@@ -3,3 +3,4 @@
 <br>前端：网页开发中（11.27）
 <br>后端：等待算法和前端网页开发完毕后。再进行整合（11.27）
 <br>算法：训练中（11.27）-第一次训练完毕（11.29）
+<img src="https://github.com/mpmpmp42/wku_cps3410_counter/blob/master/exp/results.png" width="240" height="120">
