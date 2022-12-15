@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>女仆营业部</title>
+	<link rel="stylesheet" type="text/css" href="../static/UI.css"/>
+    <script src="/static/qrcode.js"></script>
+</head>
+
+<body>
+	<div class="all">
+
+        <!--这里写的是QR code 的部分-->
+        <div class="QR">
+            <br><br><br><br>
+            <br><br><br><br>
+            <br><br><br><br>
+            <br><br>
+            <p id="yu1" style="font-size: 60px;">Scan to pay:</p>
+            <br>
+            <p id="yu1" style="font-size: 60px;">{{ value }} Yuan</p>
+            <br><br><br>
+            <div class = "qrcode" id="qrcode"></div>
+            <script type="text/javascript">
+            new QRCode(document.getElementById("qrcode"), "{{ value }}");  // 设置要生成二维码的链接
+            </script>
+        </div>
+
+        <div class="anniu">
+            <br><br><br><br>
+            <br><br>
+            <form action="{{ url_for('thanks') }}" method="post">
+            <input type="submit" value="  Finish  " class="btn twinkle" style="font-size:25px; border-radius: 5px;">
+            </form>
+        </div>
+
+        <div class="videoPart">
+
+            <br><br>
+            <br><br><br><br>
+
+            <div class="part2">
+                <video id="video" height="980px" width="735px" autoplay="" loop="" draggable="true">
+                    <source id="source" src="static/3.mp4">
+                </video>
+            </div>
+
+        </div>
+
+</body>
+
+
+</html>

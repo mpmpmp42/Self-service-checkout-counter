@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>女仆营业部</title>
+		<link rel="stylesheet" type="text/css" href="../static/UI.css"/>
+	
+    </head>
+
+<body>
+	<div class="all">
+        <div class="outer-container">
+		    <div class="wrap" id="wrap">
+            <br><br>
+            <br><p id="yu1" style="font-size: 60px;">Your Goods:</p>
+                <br><br><br>
+            {% for key in fanhui %}
+			<div class ="first-wrap">
+				<div class="info1">
+					<!--这个地方你就忽视掉&nbsp就行了，别管它-->	
+					<p style="font-size: 40px;">&nbsp; &nbsp; {{key.label}}</p>
+					<br>
+					<p style="font-size: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; {{key.number}}</p>
+				</div>
+				<p style="font-size:40px;">{{key.total_prices}} &nbsp; &nbsp; &nbsp; </p>
+				
+		    </div>
+		    <br><br>
+
+            {% endfor %}
+            </div>
+        </div>
+		
+        <!--按钮的部分-->
+        <div class="anniu">
+        <br><br>
+        <form action="{{ url_for('detect') }}" method="post">
+        <input type="submit" value="  Continue to Add  " class="btn twinkle" style="font-size:40px; border-radius: 5px;">
+        </form>
+        <br>
+        <form action="{{ url_for('checkout') }}" method="post">
+        <input type="submit" value="  Check Out  " class="btn twinkle" style="font-size:40px; border-radius: 5px;">
+        </form>
+    </div>
+
+
+
+        <!--这里写的是video的部分-->
+        <div class="videoPart">
+
+        <br><br>
+        <br><br><br><br>
+
+        <div class="part2">
+            <video id="video" height="980px" width="735px" autoplay="" loop="" draggable="true">
+                <source id="source" src="static/2.mp4">
+            </video>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+
+</html>

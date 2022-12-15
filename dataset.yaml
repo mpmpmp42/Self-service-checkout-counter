@@ -1,0 +1,23 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+train: train_data/train/images
+val: train_data/val/images
+test: train_data/test/images
+
+# Classes
+nc: 127
+names: ['banana_wb',  'banana_wob', 'blackberries', 'raspberry', 'lemon_wb', 'lemon_wob', 'grapes_wb', 'grapes_wob',
+           'tomato_wb', 'tomato_wob', 'apple_wb',  'apple_wob', 'chilli_wb', 'chilli_wob', '3+2-2', '3jia2', 'aerbeisi',
+           'anmuxi', 'aoliao', 'asamu', 'baicha', 'baishikele', 'baishikele-2', 'baokuangli', 'binghongcha',
+           'bingqilinniunai', 'bingtangxueli', 'buding', 'chacui', 'chapai', 'chapai2', 'damaicha', 'daofandian1',
+           'daofandian2', 'daofandian3', 'daofandian4', 'dongpeng', 'dongpeng-b', 'fenda', 'gudasao', 'guolicheng',
+           'guolicheng2', 'haitai', 'haochidian', 'haoliyou', 'heweidao', 'heweidao2', 'heweidao3', 'hongniu', 'hongniu2',
+           'hongshaoniurou', 'jianjiao', 'jianlibao', 'jindian', 'kafei', 'kaomo_gali', 'kaomo_jiaoyan', 'kaomo_shaokao',
+           'kaomo_xiangcon', 'kebike', 'kele', 'kele-b', 'kele-b-2', 'laotansuancai', 'liaomian', 'libaojian', 'lingdukele',
+           'lingdukele-b', 'liziyuan', 'lujiaoxiang', 'lujikafei', 'luxiangniurou', 'maidong', 'mangguoxiaolao', 'meiniye',
+           'mengniu', 'mengniuzaocan', 'moliqingcha', 'nfc', 'niudufen', 'niunai', 'nongfushanquan', 'qingdaowangzi-1',
+           'qingdaowangzi-2', 'qinningshui', 'quchenshixiangcao', 'rancha-1', 'rancha-2', 'rousongbing', 'rusuanjunqishui',
+           'suanlafen', 'suanlaniurou', 'taipingshuda', 'tangdaren', 'tangdaren2', 'tangdaren3', 'ufo', 'ufo2', 'wanglaoji',
+           'wanglaoji-c', 'wangzainiunai', 'weic', 'weitanai', 'weitanai2', 'weitanaiditang', 'weitaningmeng', 'weitaningmeng-bottle',
+           'weiweidounai', 'wuhounaicha', 'wulongcha', 'xianglaniurou', 'xianguolao', 'xianxiayuban', 'xuebi', 'xuebi-b',
+           'xuebi2', 'yezhi', 'yibao', 'yida', 'yingyangkuaixian', 'yitengyuan', 'youlemei', 'yousuanru', 'youyanggudong',
+           'yuanqishui', 'zaocanmofang', 'zihaiguo']
