@@ -1,4 +1,4 @@
-# wku_cps3410_counter 虚拟女仆营业员
+# Self-service checkout counter
 View the demo of this project through https://www.bilibili.com/video/BV1784y1b7os/
 <br>
 <br> Based on YOLOv5, Our main work is:
